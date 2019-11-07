@@ -5,11 +5,26 @@ nav{
     align-items: center;
     padding-bottom: 3%;
     border-bottom: 2px dashed lightgrey;
-    h1{
-        margin-right: 30%;
-        margin-left: 10%;
+    
+    @media @mobile{
+        flex-wrap: wrap;
     }
     a{
         font-size: 1.7rem;
+
+        @media @mobile{
+            font-size: 1.3rem;
+        }
+    }
+    }
+    h1{
+        margin-right: 30%;
+        margin-left: 10%;
+
+        @media @mobile{
+            justify-content: center;
+            font-size: 4rem;
+            margin-left: 35%;
+            margin-bottom: 3%;
     }
 }
